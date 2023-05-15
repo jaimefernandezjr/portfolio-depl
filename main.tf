@@ -96,18 +96,10 @@ resource "null_resource" "nullremote2" {
     inline = [
       "cd /tmp",
       "ls -la",
-      "sudo yum update -y",
-      "sudo amazon-linux-extras enable ansible2 -y",
-      "sudo yum install -y ansible",
-      "ansible-playbook /tmp/instance.yml -i /tmp/ip.txt"
+      "sudo apt update -y",
+      "sudo apt-add-repository ppa:ansible/ansible -y",
+      "sudo apt install -y ansible",
+      "ansible-playbook /tmp/ansible-playbook.yml -i /tmp/ip.txt"
     ]
   }
 }
-
-# # to automatically open the webpage on local system
-# resource "null_resource" "nullremote3" {
-# depends_on = [null_resource.nullremote2]
-# provisioner "local-exec" {
-#   command = "echo 'hello world'"
-#  }
-# }
