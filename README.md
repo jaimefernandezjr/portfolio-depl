@@ -4,5 +4,5 @@
 1. Provisions AWS resources to prepare for deployment
 2. Use Ansible to configure and install the dependencies to the provisioned AWS resources and deploy the resume
 3. Used AWS Cloud9 for IDE
-3. Access the deployed resume on http://54.179.69.62/web/
+3. Access the deployed resume on http://18.143.63.233/web/
 4. Access my resume repository on https://github.com/jaimefernandezjr/my-devops-resume
