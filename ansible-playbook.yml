@@ -35,5 +35,5 @@
       state: mounted
   - name: cloning git repo
     git:
-      repo: "https://github.com/jaimefernandezjr/my-devops-resume.git"
+      repo: "https://github.com/jaimefernandezjr/my-portfolio-website.git"
       dest: /var/www/html/web
